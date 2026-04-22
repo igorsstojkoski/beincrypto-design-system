@@ -188,7 +188,7 @@ typography:
     fontWeight: 400
     lineHeight: 24px
 
-rounded:
+border radius:
   xs: 2px
   sm: 4px
   DEFAULT: 6px
