@@ -1,6 +1,6 @@
 # BeInCrypto Design System
 
-A machine-readable design system specification for BeInCrypto a leading crypto media and data platform.
+A machine-readable design system specification for BeInCrypto - a leading crypto media and data platform.
 
 `DESIGN.md` gives AI coding agents a persistent, structured understanding of BeInCrypto's visual identity — so every agent, tool, and codebase produces UI that looks and feels on-brand.
 
