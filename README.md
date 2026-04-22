@@ -1,6 +1,6 @@
 # BeInCrypto Design System
 
-A machine-readable design system specification for BeInCrypto, built on the [DESIGN.md](https://github.com/google-labs-code/design.md) format by Google Labs.
+A machine-readable design system specification for BeInCrypto a leading crypto media and data platform.
 
 `DESIGN.md` gives AI coding agents a persistent, structured understanding of BeInCrypto's visual identity — so every agent, tool, and codebase produces UI that looks and feels on-brand.
 
@@ -13,7 +13,7 @@ A machine-readable design system specification for BeInCrypto, built on the [DES
 - **Spacing** — 4px base unit scale from `4px` to `48px`
 - **Border radius** — xs through md, with component context
 - **Shadows** — three elevation levels for layering and depth
-- **Components** — buttons, cards, inputs, and financial badges with full token references
+- **Components** — buttons with full token references
 - **Do's and Don'ts** — logo rules, color misuse, typeface mixing
 
 ---
