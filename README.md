@@ -1,6 +1,3 @@
-# beincrypto-design-system
-DESIGN.md specification for BeInCrypto's design system — colors, typography, spacing, and component tokens for AI coding agents.
-[README.md](https://github.com/user-attachments/files/26946988/README.md)
 # BeInCrypto Design System
 
 A machine-readable design system specification for BeInCrypto, built on the [DESIGN.md](https://github.com/google-labs-code/design.md) format by Google Labs.
