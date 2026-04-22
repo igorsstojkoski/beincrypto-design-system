@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: BeInCrypto
-description: Visual identity for BeInCrypto a leading crypto media and data platform. Covers editorial surfaces, product UIs, and InMarkets.
+description: Visual identity for BeInCrypto — a leading crypto media and data platform. Covers editorial surfaces, product UIs, and InMarkets.
 
 colors:
   neutral-950: "#0A0A0A"
@@ -188,7 +188,7 @@ typography:
     fontWeight: 400
     lineHeight: 24px
 
-border radius:
+rounded:
   xs: 2px
   sm: 4px
   DEFAULT: 6px
@@ -214,12 +214,40 @@ components:
     padding: 8px 16px
   button-primary-hover:
     backgroundColor: "{colors.neutral-800}"
+  button-subscribe-dark:
+    backgroundColor: "{colors.neutral-950}"
+    textColor: "{colors.neutral-0}"
+    typography: "{typography.subtitle-5}"
+    rounded: "{rounded.DEFAULT}"
+    padding: 8px 15px
+  button-subscribe-light:
+    backgroundColor: "{colors.neutral-0}"
+    textColor: "{colors.neutral-950}"
+    typography: "{typography.subtitle-5}"
+    rounded: "{rounded.DEFAULT}"
+    padding: 8px 15px
   button-nav:
     backgroundColor: "{colors.neutral-0}"
     textColor: "{colors.neutral-950}"
     typography: "{typography.subtitle-5}"
     rounded: "{rounded.DEFAULT}"
-    padding: 8px 16px
+    padding: 8px 15px
+  button-full-width:
+    backgroundColor: "{colors.neutral-950}"
+    textColor: "{colors.neutral-0}"
+    typography: "{typography.subtitle-4}"
+    rounded: "{rounded.DEFAULT}"
+    width: fill
+  button-tag-active:
+    backgroundColor: "{colors.neutral-150}"
+    textColor: "{colors.neutral-950}"
+    typography: "{typography.subtitle-5}"
+    rounded: 9999px
+  button-tag-default:
+    backgroundColor: "{colors.neutral-0}"
+    textColor: "{colors.neutral-450}"
+    typography: "{typography.subtitle-5}"
+    rounded: 9999px
   button-ghost:
     backgroundColor: transparent
     textColor: "{colors.neutral-950}"
@@ -229,11 +257,16 @@ components:
   button-social:
     backgroundColor: transparent
     textColor: "{colors.neutral-950}"
-    typography: "{typography.subtitle-5}"
     rounded: 9999px
   link-cta:
     textColor: "{colors.neutral-450}"
-    typography: "{typography.subtitle-5}"
+    typography: "{typography.paragraph-3}"
+  input-email:
+    backgroundColor: "{colors.neutral-750}"
+    textColor: "{colors.neutral-400}"
+    typography: "{typography.paragraph-4}"
+    rounded: 16px
+    height: 35px
 ---
 
 ## Overview
@@ -275,7 +308,7 @@ The spacing system is based on a 4px base unit, scaling from `4px` (xxs) to `48p
 
 - **Content surfaces** use light backgrounds (Neutral 0) with generous whitespace to support reading and scanning.
 - **Navigation and framing elements** use dark neutrals to create clear structural separation from content.
-- **Control padding** (horizontal: 12px, compact: 8px) governs interactive elements like buttons and inputs.
+- **Control padding** (horizontal: 15px, vertical: 8px) governs interactive elements like buttons and inputs.
 - **Content padding** scales between SM and LG depending on the density of the surface.
 
 ## Elevation & Depth
@@ -297,13 +330,27 @@ BeInCrypto uses a restrained, functional rounding system. Corners are never deco
 - **DEFAULT (6px):** Standard components — the most common border radius across the system.
 - **md (8px):** Cards, modals, drawers, and larger container components.
 
-Pill shapes (`border-radius: 9999px`) are reserved for social and tag components only.
+Pill shapes (`border-radius: 9999px`) are reserved for tag and social button components only.
 
 ## Components
 
 ### Buttons
 
-Primary buttons use `neutral-950` fill with white text — reserved for key conversion actions (Subscribe, Sign Up, Connect Wallet). The nav button is the inverse: white fill with `neutral-950` text for use on light backgrounds. Ghost buttons are transparent with a stroke only. Social buttons are circular (pill radius) with a `neutral-450` stroke. Text CTAs use `neutral-450` color with no background.
+There are several button variants across BeInCrypto surfaces:
+
+- **button-primary** — `neutral-950` fill, white text, `6px` radius. Used for primary dark-surface CTAs like "Learn More" and "Go Deeper".
+- **button-subscribe-dark** — same as primary but used specifically for the Subscribe CTA on dark backgrounds, with a `neutral-100` stroke.
+- **button-subscribe-light / button-nav** — white fill, `neutral-950` text, `neutral-100` stroke. Used on dark navbars and light subscribe surfaces.
+- **button-full-width** — `neutral-950` fill, fills container width. Used for full-bleed CTA sections.
+- **button-tag-active** — pill shape, `neutral-150` fill, `neutral-700` stroke. Active filter/category tag.
+- **button-tag-default** — pill shape, `neutral-0` fill, `neutral-300` stroke, `neutral-450` text. Default filter/category tag.
+- **button-ghost** — transparent fill, `neutral-950` stroke. Secondary actions on light surfaces.
+- **button-social** — circular pill, transparent fill, `neutral-450` stroke. Social media icon buttons.
+- **link-cta** — no background, `neutral-450` text, Geist Medium 16px. Used for inline text CTAs like "Watch on Youtube →".
+
+### Input
+
+The email input uses `neutral-750` fill with `neutral-700` stroke, `neutral-400` placeholder text, and a `16px` border radius — designed for dark subscription surfaces.
 
 ## Do's and Don'ts
 
