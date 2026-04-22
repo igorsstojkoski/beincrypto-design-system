@@ -1,3 +1,4 @@
+---
 version: alpha
 name: BeInCrypto
 description: Visual identity for BeInCrypto — a leading crypto media and data platform. Covers editorial surfaces, product UIs, and InMarkets.
@@ -18,21 +19,16 @@ colors:
   neutral-100: "#F8F8F8"
   neutral-50: "#FAFAFA"
   neutral-0: "#FFFFFF"
-
   primary: "#C8F026"
   primary-lime: "#C8F026"
-
   positive-300: "#A8F060"
   positive-400: "#6DC832"
   positive-500: "#3A9E1A"
   positive-600: "#1E7010"
-
   negative-300: "#FF7070"
   negative-400: "#E83232"
   negative-500: "#A81414"
-
   warning-300: "#FFB060"
-
   cover-green: "#0BA24B"
   cover-cyan: "#2CDEFF"
   cover-blue: "#080CED"
@@ -136,7 +132,6 @@ typography:
     fontSize: 12px
     fontWeight: 400
     lineHeight: 20px
-
   inmarkets-base:
     fontFamily: Noto Sans
     fontSize: 14px
@@ -187,7 +182,6 @@ typography:
     fontSize: 16px
     fontWeight: 600
     lineHeight: 24px
-
   accent:
     fontFamily: Instrument Serif
     fontSize: 16px
@@ -213,69 +207,36 @@ spacing:
 
 components:
   button-primary:
-    backgroundColor: "{colors.neutral-900}"
+    backgroundColor: "{colors.neutral-950}"
     textColor: "{colors.neutral-0}"
     typography: "{typography.subtitle-5}"
     rounded: "{rounded.DEFAULT}"
     padding: 8px 16px
   button-primary-hover:
     backgroundColor: "{colors.neutral-800}"
-  button-secondary:
+  button-nav:
     backgroundColor: "{colors.neutral-0}"
-    textColor: "{colors.neutral-900}"
+    textColor: "{colors.neutral-950}"
     typography: "{typography.subtitle-5}"
     rounded: "{rounded.DEFAULT}"
     padding: 8px 16px
   button-ghost:
     backgroundColor: transparent
-    textColor: "{colors.neutral-900}"
+    textColor: "{colors.neutral-950}"
     typography: "{typography.subtitle-5}"
     rounded: "{rounded.DEFAULT}"
     padding: 8px 16px
-  card:
-    backgroundColor: "{colors.neutral-0}"
-    textColor: "{colors.neutral-900}"
-    rounded: "{rounded.md}"
-    padding: "{spacing.lg}"
-  card-sponsored:
-    backgroundColor: "{colors.neutral-200}"
-    textColor: "{colors.neutral-900}"
-    rounded: "{rounded.md}"
-    padding: "{spacing.lg}"
-  input:
-    backgroundColor: "{colors.neutral-0}"
-    textColor: "{colors.neutral-900}"
-    typography: "{typography.paragraph-4}"
-    rounded: "{rounded.sm}"
-    padding: 8px 12px
-    height: 36px
-  input-sm:
-    backgroundColor: "{colors.neutral-0}"
-    textColor: "{colors.neutral-900}"
-    typography: "{typography.paragraph-5}"
-    rounded: "{rounded.xs}"
-    padding: 4px 8px
-    height: 28px
-  badge-positive:
-    backgroundColor: "{colors.positive-300}"
-    textColor: "{colors.neutral-900}"
-    typography: "{typography.subtitle-6}"
-    rounded: "{rounded.xs}"
-    padding: 2px 6px
-  badge-negative:
-    backgroundColor: "{colors.negative-300}"
-    textColor: "{colors.neutral-0}"
-    typography: "{typography.subtitle-6}"
-    rounded: "{rounded.xs}"
-    padding: 2px 6px
-  badge-warning:
-    backgroundColor: "{colors.warning-300}"
-    textColor: "{colors.neutral-900}"
-    typography: "{typography.subtitle-6}"
-    rounded: "{rounded.xs}"
-    padding: 2px 6px
+  button-social:
+    backgroundColor: transparent
+    textColor: "{colors.neutral-950}"
+    typography: "{typography.subtitle-5}"
+    rounded: 9999px
+  link-cta:
+    textColor: "{colors.neutral-450}"
+    typography: "{typography.subtitle-5}"
 ---
 
+## Overview
 
 BeInCrypto is a crypto-native media and data platform that blends editorial journalism with real-time market intelligence. The visual identity is built on **clarity, trust, and precision** — qualities essential in the fast-moving world of digital assets.
 
@@ -283,6 +244,7 @@ The design language is clean and editorial-first: high-contrast neutrals form th
 
 Two distinct product contexts exist within the BeInCrypto family: the main editorial and product surfaces (using Geist), and the InMarkets data product (using Noto Sans for its superior rendering of dense numerical data). Both share the same color system and spacing scale.
 
+## Colors
 
 The color system is built on a deep neutral scale with semantic layers for financial data and a single brand accent.
 
@@ -295,6 +257,7 @@ The color system is built on a deep neutral scale with semantic layers for finan
 
 Semantic colors are applied sparingly to preserve editorial clarity. Decorative use of positive/negative colors outside of financial data contexts is not permitted.
 
+## Typography
 
 BeInCrypto uses three typefaces, each with a distinct role:
 
@@ -306,6 +269,7 @@ BeInCrypto uses three typefaces, each with a distinct role:
 
 Hierarchy is defined through size and weight changes within each family — not by switching typefaces mid-component.
 
+## Layout & Spacing
 
 The spacing system is based on a 4px base unit, scaling from `4px` (xxs) to `48px` (xxxl). All layout decisions — margins, padding, gaps — should reference a value from this scale.
 
@@ -314,6 +278,7 @@ The spacing system is based on a 4px base unit, scaling from `4px` (xxs) to `48p
 - **Control padding** (horizontal: 12px, compact: 8px) governs interactive elements like buttons and inputs.
 - **Content padding** scales between SM and LG depending on the density of the surface.
 
+## Elevation & Depth
 
 Shadows are used to establish hierarchy and materiality without relying on color. Three levels are defined:
 
@@ -323,6 +288,7 @@ Shadows are used to establish hierarchy and materiality without relying on color
 
 Dark backgrounds should rely on border definition rather than shadows for layering.
 
+## Shapes
 
 BeInCrypto uses a restrained, functional rounding system. Corners are never decorative — they reflect the component's size and context.
 
@@ -331,17 +297,15 @@ BeInCrypto uses a restrained, functional rounding system. Corners are never deco
 - **DEFAULT (6px):** Standard components — the most common border radius across the system.
 - **md (8px):** Cards, modals, drawers, and larger container components.
 
-Pill shapes (`border-radius: 9999px`) are reserved for tags and badge components only.
+Pill shapes (`border-radius: 9999px`) are reserved for social and tag components only.
 
+## Components
 
-Primary buttons use `neutral-900` fill on light backgrounds for maximum contrast — reserved for key conversion actions (Subscribe, Sign Up, Connect Wallet). Ghost and secondary variants maintain the same rounding and typography but differ in fill treatment.
+### Buttons
 
-Default cards use a white background with `rounded.md` (8px) corners. Sponsored or highlighted content uses `neutral-200` background to signal editorial distinction without breaking hierarchy.
+Primary buttons use `neutral-950` fill with white text — reserved for key conversion actions (Subscribe, Sign Up, Connect Wallet). The nav button is the inverse: white fill with `neutral-950` text for use on light backgrounds. Ghost buttons are transparent with a stroke only. Social buttons are circular (pill radius) with a `neutral-450` stroke. Text CTAs use `neutral-450` color with no background.
 
-Inputs use `rounded.sm` (4px) at standard size and `rounded.xs` (2px) at small size. All interactive controls reference the spacing token scale for consistent padding.
-
-Financial badges (positive, negative, warning) use semantic colors and are the only components permitted to use the positive/negative color scale. Typography is always `subtitle-6` to maintain small, non-intrusive presence.
-
+## Do's and Don'ts
 
 - **Do** use Lime (`#C8F026`) only as an accent — never as a background fill for large surfaces.
 - **Do** use positive/negative colors exclusively for financial data states (price changes, P&L, trends).
