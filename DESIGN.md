@@ -1,4 +1,3 @@
----
 version: alpha
 name: BeInCrypto
 description: Visual identity for BeInCrypto — a leading crypto media and data platform. Covers editorial surfaces, product UIs, and InMarkets.
