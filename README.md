@@ -2,19 +2,19 @@
 
 A machine-readable design system specification for BeInCrypto - a leading crypto media and data platform.
 
-`DESIGN.md` gives AI coding agents a persistent, structured understanding of BeInCrypto's visual identity — so every agent, tool, and codebase produces UI that looks and feels on-brand.
+`DESIGN.md` gives AI coding agents a persistent, structured understanding of BeInCrypto's visual identity - so every agent, tool, and codebase produces UI that looks and feels on-brand.
 
 ---
 
 ## What's inside
 
-- **Colors** — full neutral scale, Lime brand accent, semantic positive/negative/warning colors, and extended cover palette
-- **Typography** — Geist (editorial & product), Noto Sans (InMarkets), and Instrument Serif (accent)
-- **Spacing** — 4px base unit scale from `4px` to `48px`
-- **Border radius** — xs through md, with component context
-- **Shadows** — three elevation levels for layering and depth
-- **Components** — buttons with full token references
-- **Do's and Don'ts** — logo rules, color misuse, typeface mixing
+- **Colors** - full neutral scale, Lime brand accent, semantic positive/negative/warning colors, and extended cover palette
+- **Typography** - Geist (editorial & product), Noto Sans (InMarkets), and Instrument Serif (accent)
+- **Spacing** - 4px base unit scale from `4px` to `48px`
+- **Border radius** - xs through md, with component context
+- **Shadows** - three elevation levels for layering and depth
+- **Components** - buttons with full token references
+- **Do's and Don'ts** - logo rules, color misuse, typeface mixing
 
 ---
 
